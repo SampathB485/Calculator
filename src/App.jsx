@@ -24,7 +24,7 @@ function App() {
 
   return (
     <>
-      <input type="text" value={expression} onChange={ExpressionChange}/>
+      <input type="text" value={expression} onChange={ExpressionChange} id='displayScreen'/>
       <div id='keys'>
         <button id='numbers' onClick={()=>{CalculateFunction("7")}}>7</button>
         <button id='numbers' onClick={()=>{CalculateFunction("8")}}>8</button>
@@ -49,7 +49,7 @@ function App() {
         <button id='numbers' onClick={()=>{CalculateFunction(".")}}>.</button>
         <button id='numbers' onClick={()=>{CalculateFunction("+")}}>+</button>
       </div>
-      <button  onClick={()=>{Evaluate()}} >=</button>
+      <button  onClick={()=>{Evaluate()}} id='EqualButton'>=</button>
     </>
   )
 }
