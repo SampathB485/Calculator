@@ -24,6 +24,7 @@ function App() {
 
   return (
     <>
+      <h1>kai sa hei mera deployment :D</h1>
       <input type="text" value={expression} onChange={ExpressionChange} id='displayScreen'/>
       <div id='keys'>
         <button id='numbers' onClick={()=>{CalculateFunction("7")}}>7</button>
